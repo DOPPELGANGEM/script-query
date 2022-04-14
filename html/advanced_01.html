@@ -119,24 +119,24 @@
           <div>
             <p>동물의 종</p>
             <div>
-              <p>포유류</p>
-              <ul>
+              <p class="animals-click">포유류</p>
+              <ul class="animals-item">
                 <li>강아지</li>
                 <li>고양이</li>
                 <li>송아지</li>
               </ul>
             </div>
             <div>
-              <p>파충류</p>
-              <ul>
+              <p class="animals-click">파충류</p>
+              <ul class="animals-item">
                 <li>거북이</li>
                 <li>도마뱀</li>
                 <li>개구리</li>
               </ul>
             </div>
             <div>
-              <p>조류</p>
-              <ul>
+              <p class="animals-click">조류</p>
+              <ul class="animals-item">
                 <li>독수리</li>
                 <li>부엉이</li>
                 <li>기러기</li>
@@ -180,6 +180,12 @@
       <h6>@Bstones</h6>
     </footer>
     
+    <script>
+      /* test 07 */
+      $('.animals-click').on('click', function(){
+        $(this).next().slideToggle().siblings('.animals-item').slideUp();
+      });
+    </script>
   </div>
 
 </body>
