@@ -183,7 +183,9 @@
     <script>
       /* test 07 */
       $('.animals-click').on('click', function(){
-        $(this).next().slideToggle().siblings('.animals-item').slideUp();
+        $(this).next().slideToggle();
+        $(this).next().siblings('.animals-item').slideUp();
+        /* $(this).next().slideToggle().siblings('.animals-item').slideUp(); */
       });
     </script>
   </div>
